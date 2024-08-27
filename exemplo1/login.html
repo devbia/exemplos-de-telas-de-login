@@ -5,10 +5,17 @@
         <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css">
         <link type="text/css" rel="stylesheet" href="css/login.css">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <title> Login Form </title>
-
+        <title>Login Form</title>
 </head>
 <body>
+<div class="container">
+        <!-- Mudei a posição da nova div para aparecer primeiro -->
+        <div class="new-div">
+                <!-- Conteúdo da nova div -->
+                <h2>Bem-vindo!</h2>
+                <p>Se você é novo aqui, crie uma conta para começar.</p>
+                <button onclick="window.location.href='/registrar.php'" id="buttonRegistrar" name="buttonRegistrar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">Criar conta</span></button>
+        </div>
         <div class="login">
                 <form id="form" name="form" method="post" action="doLogin.php">
                         <div class="div-align-center">
@@ -22,13 +29,6 @@
                         </div>
                 </form>
         </div>
-        <div class="div-align-right">
-
-                <button onclick="window.location.href='/senha.php'" id="buttonSenha" name="buttonSenha" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">Esqueci a senha</span></button>
-
-                <button onclick="window.location.href='/registrar.php'" id="buttonRegistrar" name="buttonRegistrar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" type="button"><span class="ui-button-text ui-c">Criar conta</span></button>
-        </div>
-
-
+</div>
 </body>
 </html>
